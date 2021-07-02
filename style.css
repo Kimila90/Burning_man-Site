@@ -6,14 +6,31 @@ body {
     font-size: 16px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
     text-transform: uppercase;
 }
+h2 {
+    font-size: 50px;
+    margin-bottom: 58px;
+}
+h3 {
+    font-size: 25px;
+}
+
+p {
+    margin: 0;
+}
 
 ul, li {
     display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -23,7 +40,18 @@ ul, li {
 
 .header {
     background: url('img/header-bg.jpg') no-repeat center / cover;
+    padding-top: 57px;
+    color: white;
+    padding-bottom: 322px;
+    height: 100vh;
+}
 
+a {
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+section {
+    padding-top: 113px;
 }
 
 header a{
@@ -36,10 +64,94 @@ header a{
 
 .menu li a {
     text-transform: uppercase;
-    text-decoration: none;
     font-style: 14px;
 }
 
 .menu li {
     margin-right: 40px;
+}
+
+.tel {
+    font-size: 17px;
+    margin-left: auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    /* для первого элемента используется паддинг,  */
+    /* так как иначе вся шапка уедет */
+    padding-top: 57px; 
+}
+
+.logo {
+    margin-right: 69px;
+}
+
+.offer {
+    text-transform: uppercase;
+    margin-top: 216px;
+}
+
+.offer p {
+    font-size: 30px;
+    letter-spacing: 0.1em;
+}
+
+.offer h1 {
+    font-size: 100px;
+    margin-bottom: 19px;
+    margin-top: -9px;
+    letter-spacing: 0.02em;
+}
+
+.btn {
+    display: block;
+    font-style: 17px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 17px 47px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    width: 238px;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400px;
+    text-align: justify;
+    line-height: 1.62em;
+    margin-top: 50px;
+}
+
+.desc-left, .desc-right {
+    width: 567px;
+}
+
+.gallery {
+    margin-top: 67px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.footer-text {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    padding: 114px 0;
+}
+
+.footer-text p {
+    margin-right: 67px;
 }
